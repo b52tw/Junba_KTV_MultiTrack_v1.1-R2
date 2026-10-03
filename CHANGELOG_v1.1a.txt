@@ -1,0 +1,9 @@
+峻爸 KTV 多文字軌核對器 v1.1a Hotfix
+
+- 修正 Android GitHub Actions 在 android-actions/setup-android@v3 嘗試安裝已移除的 SDK package「tools」而失敗。
+- Android job 改用 GitHub Ubuntu runner 既有 Android SDK，直接定位 sdkmanager。
+- 明確安裝 platform-tools、Android 35 platform、build-tools 35.0.0。
+- actions/setup-java 更新為 v5。
+- Android runner 固定 ubuntu-24.04，避免 ubuntu-latest 映像切換造成不確定性。
+- Windows Single EXE 建置流程不變。
+- Android versionCode 12、versionName 1.1a。
